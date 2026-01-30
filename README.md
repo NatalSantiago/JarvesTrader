@@ -20,7 +20,6 @@
 [![Download Now](https://img.shields.io/badge/Download-Latest_Release-success)](https://github.com/NatalSantiago/Jarves-Trader/releases/latest)
 [![WhatsApp Support](https://img.shields.io/badge/WhatsApp-Suporte_24h-25D366)](https://wa.me/5599984447141)
 [![Email](https://img.shields.io/badge/Email-Contato%20Rápido-blue)](mailto:natal.santiago.tech@gmail.com)
-[![Discord](https://img.shields.io/badge/Discord-Comunidade-7289DA)](https://discord.gg/jarves-trader)
 
 </div>
 
@@ -446,13 +445,6 @@ Não, o sistema é totalmente automático. Mas recomenda-se verificação perió
 - Ajuda com instalação e configuração
 - Suporte técnico gratuito
 
-#### Discord da Comunidade
-**Link:** [https://discord.gg/jarves-trader](https://discord.gg/jarves-trader)
-- Canais organizados por tópico
-- Compartilhamento de configurações
-- Ajuda mútua entre usuários
-- Eventos semanais e tutoriais
-
 #### Email para Assuntos Formais
 **Endereço:** [natal.santiago.tech@gmail.com](mailto:natal.santiago.tech@gmail.com)
 - Relatórios de bugs
@@ -466,8 +458,7 @@ Não, o sistema é totalmente automático. Mas recomenda-se verificação perió
 ✅ Instalação básica  
 ✅ Configuração inicial  
 ✅ Dúvidas sobre parâmetros  
-✅ Solução de erros comuns  
-✅ Acesso à comunidade Discord  
+✅ Solução de erros comuns 
 
 #### Premium (Consultoria)
 🔧 Otimização personalizada para seu perfil  
@@ -559,7 +550,6 @@ Este projeto é desenvolvido gratuitamente para a comunidade. Seu apoio ajuda:
 - ⭐ **Dê uma estrela no GitHub**
 - 📢 **Compartilhe com outros traders**
 - 🐛 **Reporte bugs e sugira melhorias**
-- 💬 **Participe da comunidade no Discord**
 - 📝 **Contribua com código ou documentação**
 
 ### Transparência
@@ -647,8 +637,7 @@ Todo valor recebido é reinvestido:
 6. **Monitore** os resultados
 
 ### 📞 Precisa de Ajuda?
-**WhatsApp:** [(99) 9 8444-7141](https://wa.me/5599984447141)  
-**Discord:** [Comunidade Ativa](https://discord.gg/jarves-trader)  
+**WhatsApp:** [(99) 9 8444-7141](https://wa.me/5599984447141)
 **Email:** [natal.santiago.tech@gmail.com](mailto:natal.santiago.tech@gmail.com)
 
 ---
