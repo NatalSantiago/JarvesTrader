@@ -47,7 +47,7 @@
 
 ### O que é o PriceAction ML BR?
 
-O **PriceAction ML BR** é um Expert Advisor (robô de trading) avançado desenvolvido para a plataforma MetaTrader 5. Ele combina técnicas tradicionais de análise de price action com algoritmos modernos de Machine Learning para identificar oportunidades de trading com alta probabilidade de sucesso.
+O **Jarve´s Trader** é um Expert Advisor (robô de trading) avançado desenvolvido para a plataforma MetaTrader 5. Ele combina técnicas tradicionais de análise de price action com algoritmos modernos de Machine Learning para identificar oportunidades de trading com alta probabilidade de sucesso.
 
 ### Objetivos do Projeto
 
