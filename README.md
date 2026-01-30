@@ -130,7 +130,7 @@ O **Jarve´s Trader** é um Expert Advisor (robô de trading) avançado desenvol
 
 ### Download do EA
 
-**[⬇️ BAIXAR VERSÃO MAIS RECENTE](https://github.com/NatalSantiago/PriceActionML-BR/releases/latest)**
+**[⬇️ BAIXAR VERSÃO MAIS RECENTE](https://github.com/NatalSantiago/Jarves-Trader/releases/latest)**
 
 ### Passo-a-Passo em 5 Minutos
 
@@ -139,7 +139,7 @@ O **Jarve´s Trader** é um Expert Advisor (robô de trading) avançado desenvol
 1. Clique no link acima para baixar
 2. Extraia o arquivo ZIP em uma pasta
 3. Você verá os arquivos:
-   - PriceActionML.mq5 (EA principal)
+   - JarvesTrader.mq5 (EA principal)
    - TreinadorML.mq5 (Opcional)
    - PriceActionPatterns.mqh (Biblioteca)
 ```
@@ -156,7 +156,7 @@ O **Jarve´s Trader** é um Expert Advisor (robô de trading) avançado desenvol
 #### 3. Compilar o EA
 ```bash
 1. No MT5, pressione F4 para abrir o MetaEditor
-2. Abra o arquivo PriceActionML.mq5
+2. Abra o arquivo JarvesTrader.mq5
 3. Pressione F7 para compilar
 4. Verifique se não há erros (deve aparecer "0 errors")
 ```
@@ -165,7 +165,7 @@ O **Jarve´s Trader** é um Expert Advisor (robô de trading) avançado desenvol
 ```bash
 1. Volte ao MT5 e abra um gráfico (ex: EURUSD H1)
 2. Na Janela de Navegação, vá em "Expert Advisors"
-3. Arraste "PriceAction ML BR" para o gráfico
+3. Arraste "Jarve's Trader" para o gráfico
 4. Configure os parâmetros (veja próxima seção)
 5. Clique em "OK" para ativar
 ```
@@ -173,7 +173,7 @@ O **Jarve´s Trader** é um Expert Advisor (robô de trading) avançado desenvol
 #### 5. Verificar Funcionamento
 ```bash
 1. Verifique o log em: Experts (Ctrl+T)
-2. Deve aparecer "PriceAction ML BR inicializado"
+2. Deve aparecer "Jarve's Trader inicializado"
 3. O EA começará a analisar o mercado
 4. Pronto! O sistema está operacional
 ```
@@ -187,7 +187,7 @@ O **Jarve´s Trader** é um Expert Advisor (robô de trading) avançado desenvol
 #### Seção: CONFIGURAÇÕES GERAIS
 | Parâmetro | Valor Padrão | Descrição |
 |-----------|--------------|-----------|
-| `Nome_Expert` | "PriceAction ML BR" | Identificação do EA |
+| `Nome_Expert` | "Jarve's Trader" | Identificação do EA |
 | `Tamanho_Lote` | 0.1 | Volume padrão das operações |
 | `Numero_Magico` | 2024 | ID único para identificação |
 | `Deslizamento` | 3 | Slippage máximo permitido |
@@ -752,7 +752,7 @@ void analisarResultados() {
 ### Parâmetros para Otimização
 
 ```mql5
-// Arquivo: PriceActionML_Optimize.mq5
+// Arquivo: JarvesTrader_Optimize.mq5
 
 // Grupo: Indicadores Técnicos
 input int EMA_Fast_Optimize = 9;        // Min:5, Max:15, Step:2
@@ -1097,14 +1097,14 @@ Todo valor recebido é reinvestido no projeto:
 - **Testes Realizados:** 50+ configurações
 
 ### Comunidade
-![GitHub stars](https://img.shields.io/github/stars/NatalSantiago/PriceActionML-BR?style=social)
-![GitHub forks](https://img.shields.io/github/forks/NatalSantiago/PriceActionML-BR?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/NatalSantiago/PriceActionML-BR?style=social)
+![GitHub stars](https://img.shields.io/github/stars/NatalSantiago/Jarves-Trader?style=social)
+![GitHub forks](https://img.shields.io/github/forks/NatalSantiago/Jarves-Trader?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/NatalSantiago/Jarves-Trader?style=social)
 
 ### Atividade
-![GitHub issues](https://img.shields.io/github/issues/NatalSantiago/PriceActionML-BR)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/NatalSantiago/PriceActionML-BR)
-![GitHub last commit](https://img.shields.io/github/last-commit/NatalSantiago/PriceActionML-BR)
+![GitHub issues](https://img.shields.io/github/issues/NatalSantiago/Jarves-Trader)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/NatalSantiago/Jarves-Trader)
+![GitHub last commit](https://img.shields.io/github/last-commit/NatalSantiago/Jarves-Trader)
 
 ---
 
@@ -1134,7 +1134,7 @@ Todo valor recebido é reinvestido no projeto:
 
 ## 🚀 Comece Agora!
 
-**[⬇️ BAIXAR VERSÃO 2.0](https://github.com/NatalSantiago/PriceActionML-BR/releases/latest)**
+**[⬇️ BAIXAR VERSÃO 2.0](https://github.com/NatalSantiago/Jarves-Trader/releases/latest)**
 
 ### Passos Rápidos:
 1. **Baixe** o EA
@@ -1156,6 +1156,6 @@ Todo valor recebido é reinvestido no projeto:
 
 📈 **Trade com Sabedoria, Gerencie com Disciplina!**
 
-[⬆ Voltar ao Topo](#-priceaction-ml-br---expert-advisor-para-metatrader-5)
+[⬆ Voltar ao Topo](#-jarves-trader---expert-advisor-para-metatrader-5)
 
 </div>
