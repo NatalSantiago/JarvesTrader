@@ -3,6 +3,7 @@
 </div>
 
 <div align="center">
+   
 # 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
 
 **Sua Estratégia de Trading com Transparência e Resultados Reais**
