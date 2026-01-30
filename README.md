@@ -1,4 +1,5 @@
 <div align="center">
+  
 # 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
 
 **Sistema Automatizado de Trading com Machine Learning e Inteligência Artificial**
