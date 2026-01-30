@@ -1,7 +1,7 @@
+![Captura de Tela](JarvesTrader01.png)
+
 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
 <div align="center">
-
-![Captura de Tela](JarvesTrader01.png)
 
 Sua Estratégia de Trading com Transparência e Resultados Reais
 
