@@ -1,5 +1,5 @@
 <div align="center">
-<img src="JarvesTrader01.png" width="250" height="250" alt="Logo Jarve's Trader">
+<img src="JarvesTrader01.png" width="300" height="300" alt="Logo Jarve's Trader">
 </div>
 
 <div align="center">
