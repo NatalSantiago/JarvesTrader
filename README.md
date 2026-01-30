@@ -1017,15 +1017,22 @@ Este projeto é desenvolvido gratuitamente para a comunidade brasileira de trade
 
 #### 1. Doação via PIX (Recomendado)
 **Chave PIX:** `523.741.143-68`  
-**Nome:** Santiago TECH Soluções  
+**Nome:** Natal de Jesus da Silva Santiago  
 **Valor:** Qualquer valor é bem-vindo!
 
-#### 2. QR Code PIX
 <div align="center">
 
-![QR Code PIX](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=00020126580014BR.GOV.BCB.PIX01365237411436852040000530398654041.005802BR5925SANTIAGO%20TECH%20SOLUCOES6009SAO%20PAULO62140510PriceActionML6304B5A3)
+### 💰 Doação via PIX
 
-*Escaneie com seu app bancário*
+**CPF:** 523.741.143-68
+
+![Captura de Tela](qrcode_pix.png)
+
+*Escaneie o QR Code acima ou use a chave PIX: 523.741.143-68*
+
+---
+
+**Sua contribuição ajuda a manter este projeto ativo e em constante evolução!**
 
 </div>
 
