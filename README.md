@@ -1,18 +1,22 @@
-# 🎯 PriceAction ML BR - Expert Advisor para MetaTrader 5
+# 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
 
 <div align="center">
 
-![PriceAction ML BR](https://img.shields.io/badge/Expert_Advisor-MQL5-blue)
+**Sua Estratégia de Trading com Transparência e Resultados Reais**
+
+*"Tecnologia que entende o mercado, honestidade que valoriza seu capital"*
+
+![Jarve's Trader](https://img.shields.io/badge/Expert_Advisor-MQL5-blue)
 ![MetaTrader 5](https://img.shields.io/badge/Platform-MetaTrader%205-green)
 ![Version](https://img.shields.io/badge/Version-2.0.0-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Language](https://img.shields.io/badge/Language-Portuguese%20(BR)-red)
 
-**Sistema de Trading Automatizado com Machine Learning e Análise de Price Action**
+**Sistema Automatizado com Machine Learning e Gestão Inteligente de Risco**
 
-[![Download Now](https://img.shields.io/badge/Download-Latest_Release-success)](https://github.com/NatalSantiago/PriceActionML-BR/releases/latest)
-[![WhatsApp Support](https://img.shields.io/badge/WhatsApp-Support-25D366)](https://wa.me/5599984447141)
-[![Email](https://img.shields.io/badge/Email-Contact%20Us-blue)](mailto:natal.santiago.tech@gmail.com)
+[![Download Now](https://img.shields.io/badge/Download-Latest_Release-success)](https://github.com/NatalSantiago/Jarves-Trader/releases/latest)
+[![WhatsApp Support](https://img.shields.io/badge/WhatsApp-Suporte_24h-25D366)](https://wa.me/5599984447141)
+[![Email](https://img.shields.io/badge/Email-Contato%20Rápido-blue)](mailto:natal.santiago.tech@gmail.com)
 
 </div>
 
