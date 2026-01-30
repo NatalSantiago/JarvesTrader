@@ -1,4 +1,6 @@
-![Logo Jarve's Trader](JarvesTrader01.png =100x100)
+<div align="center">
+<img src="JarvesTrader01.png" width="150" height="150" alt="Logo Jarve's Trader">
+</div>
 
 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
 <div align="center">
