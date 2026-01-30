@@ -1,4 +1,4 @@
-![Captura de Tela](JarvesTrader01.png)
+![Logo Jarve's Trader](JarvesTrader01.png =100x100)
 
 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
 <div align="center">
