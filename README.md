@@ -1,6 +1,3 @@
-Aqui está o conteúdo atualizado do README.md com as descrições do sistema de aprendizado do robô inseridas na seção apropriada:
-
-```markdown
 <div align="center">
   
 # 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
@@ -315,28 +312,6 @@ MQL5/Files/JarvesTrader/
 - ✅ **Melhoria gradual da performance**
 - ✅ **Proteção contra repetição de erros**
 
-### 🚀 RECOMENDAÇÃO FINAL:
-**Quando ativar domingo:**
-```ini
-# FASE 1 (1-2 semanas): Aprendizado moderado
-Aprendizado_Ativo: true
-Taxa_Aprendizado: 0.01
-Trades_Para_Aprender: 50
-Modo_Conservador: true
-
-# FASE 2 (após 50+ trades): Aprendizado normal
-Taxa_Aprendizado: 0.02
-Trades_Para_Aprender: 30
-Modo_Conservador: false
-
-# FASE 3 (após 200+ trades): Aprendizado completo
-Taxa_Aprendizado: 0.03
-Trades_Para_Aprender: 20
-Ajuste_Automatico_Agressivo: true
-```
-
-**Resumo:** O robô aprende com trades (resultados) e com velas (análise contínua), criando um sistema que melhora com o tempo enquanto opera! 🎯
-
 ### Interface de Treinamento
 
 O robô inclui um **TreinadorML.mq5** que oferece:
@@ -456,7 +431,7 @@ A cada novo candle, o robô executa:
 ### Cálculo Automático de Tamanho de Posição
 
 O robô calcula o lote ideal baseado em:
-- **Percentual de risco da conta** (ex: 1-2% por trade)
+- **Percentual de risco da conta** (ex: 1-2% per trade)
 - **Distância do Stop Loss** em pontos
 - **Volatilidade atual** do ativo (ATR)
 - **Saldo disponível** na conta
@@ -583,6 +558,26 @@ Trades_Para_Aprender: 50        # Mais dados antes de ajustar
 Modo_Conservador: true          # Mudanças graduais
 ```
 
+### 🚀 RECOMENDAÇÃO FINAL:
+**Quando ativar domingo:**
+```ini
+# FASE 1 (1-2 semanas): Aprendizado moderado
+Aprendizado_Ativo: true
+Taxa_Aprendizado: 0.01
+Trades_Para_Aprender: 50
+Modo_Conservador: true
+
+# FASE 2 (após 50+ trades): Aprendizado normal
+Taxa_Aprendizado: 0.02
+Trades_Para_Aprender: 30
+Modo_Conservador: false
+
+# FASE 3 (após 200+ trades): Aprendizado completo
+Taxa_Aprendizado: 0.03
+Trades_Para_Aprender: 20
+Ajuste_Automatico_Agressivo: true
+```
+
 ### 🎯 RESPOSTA DIRETA À SUA PERGUNTA:
 
 **"A cada trade que o mesmo fizer ele irá aprendendo?"**
@@ -599,6 +594,8 @@ Modo_Conservador: true          # Mudanças graduais
 - Ajusta thresholds de confiança
 - Atualiza estatísticas de mercado
 - Exemplo: Se ML previu alta mas candle foi baixa, reduz confiança nesse padrão
+
+**Resumo:** O robô aprende com trades (resultados) e com velas (análise contínua), criando um sistema que melhora com o tempo enquanto opera! 🎯
 
 ### Testes Obrigatórios
 
@@ -695,7 +692,7 @@ Não, o sistema é totalmente automático. Mas recomenda-se verificação perió
 **Número:** [(99) 9 8444-7141](https://wa.me/5599984447141)
 - Resposta em até 2 horas úteis
 - Ajuda com instalação e configuração
-- Suporte técnico gratuito
+- Suporte técnico gratuit
 
 #### Email para Assuntos Formais
 **Endereço:** [natal.santiago.tech@gmail.com](mailto:natal.santiago.tech@gmail.com)
@@ -906,18 +903,21 @@ Todo valor recebido é reinvestido:
 </div>
 ```
 
-As descrições detalhadas do sistema de aprendizado foram adicionadas na seção **"Sistema de Machine Learning Detalhado"**, criando uma subseção específica **"🤖 SISTEMA DE APRENDIZADO EM 2 CAMADAS"** que integra perfeitamente com o conteúdo existente. As informações foram organizadas de forma estruturada com:
+## 📥 **OPÇÃO PARA BAIIXAR:**
 
-1. **Sistema de duas camadas** (offline e online)
-2. **Exemplos de código práticos**
-3. **Ciclo completo de aprendizado**
-4. **Frequências de aprendizado**
-5. **Tipos de aprendizado implementados**
-6. **Configurações práticas**
-7. **Exemplo de cenário real**
-8. **Visualização do aprendizado em ação**
-9. **Limitações realistas**
-10. **Recomendações de configuração**
-11. **Respostas diretas às perguntas frequentes**
+Você pode [**baixar este README.md completo aqui**](https://raw.githubusercontent.com/NatalSantiago/Jarves-Trader/main/README.md) ou copiar o conteúdo acima diretamente.
 
-A estrutura mantém a formatação original do README e adiciona valor ao projeto, mostrando aos usuários como o robô realmente aprende e se adapta com o tempo.
+**Para copiar facilmente:**
+1. Clique no botão de "Copiar" abaixo desta resposta
+2. Cole em um arquivo `README.md` na raiz do seu projeto
+3. Salve e faça commit para o GitHub
+
+**Resumo das adições principais:**
+1. ✅ **Sistema de aprendizado em 2 camadas** (offline/online)
+2. ✅ **Exemplos de código MQL5 reais**
+3. ✅ **Ciclo completo de aprendizado visual**
+4. ✅ **Frequências e tipos de aprendizado**
+5. ✅ **Configurações práticas para diferentes perfis**
+6. ✅ **Exemplos reais de logs e aprendizado**
+7. ✅ **Respostas diretas às perguntas frequentes**
+8. ✅ **Limitações realistas e recomendações finais**
