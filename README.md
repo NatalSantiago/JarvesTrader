@@ -1,3 +1,6 @@
+Aqui está o conteúdo atualizado do README.md com as descrições do sistema de aprendizado do robô inseridas na seção apropriada:
+
+```markdown
 <div align="center">
   
 # 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
@@ -125,6 +128,214 @@ Cada modelo é testado através de:
 - **Testes com dados recentes**
 - **Comparação de métricas** (accuracy, precisão, recall)
 - **Seleção do melhor modelo** para cada ativo
+
+### 🤖 SISTEMA DE APRENDIZADO EM 2 CAMADAS:
+
+#### 1. APRENDIZADO OFFLINE (TreinadorML)
+**Quando:** Quando você executa o TreinadorML.mq5  
+**Como:** Usa dados históricos (ex: últimas 5000 velas)  
+**Resultado:** Gera um modelo .bin (arquivo de pesos/regras)  
+**Frequência:** Você decide (semanal, mensal, etc.)
+
+#### 2. APRENDIZADO ONLINE (Jarve's Trader em tempo real)
+**Quando:** Durante a operação normal do EA  
+**Como:** Ajusta parâmetros baseado nos trades recentes  
+**Resultado:** Melhora performance gradualmente  
+**Frequência:** A cada trade e a cada candle
+
+### 📊 COMO FUNCIONA NA PRÁTICA:
+
+#### A) APRENDENDO COM TRADES:
+```mql5
+// Exemplo simplificado do código:
+void AprenderComTrade(int resultado_trade)
+{
+    // Se trade foi lucrativo
+    if(resultado_trade > 0)
+    {
+        // Reforça as condições que levaram a este trade
+        ReforcarParametrosAtuais();
+        Print("✅ Trade lucrativo - Reforçando estratégia");
+    }
+    else // Se trade foi perdedor
+    {
+        // Ajusta parâmetros para evitar erros similares
+        AjustarParametrosParaEvitarPerda();
+        Print("⚠️ Trade perdedor - Ajustando parâmetros");
+    }
+    
+    // Salva aprendizado no arquivo de configuração
+    SalvarAprendizado();
+}
+```
+
+#### B) APRENDENDO COM VELAS (Análise Contínua):
+```mql5
+void OnTick()
+{
+    // A cada novo candle completo
+    if(IsNewCandle())
+    {
+        // Analisa se previsão do ML foi correta
+        AnalisarAcuraciaPrevisao();
+        
+        // Ajusta thresholds baseado no histórico recente
+        AjustarLimiaresDinamicamente();
+        
+        // Atualiza modelos com dados mais recentes
+        if(velas_analisadas % 100 == 0) // A cada 100 velas
+        {
+            AtualizarModeloIncremental();
+        }
+    }
+}
+```
+
+### 🔄 CICLO COMPLETO DE APRENDIZADO:
+```
+📈 NOVO CANDLE → 🤖 ANALISA → 📊 FAZ PREVISÃO → 🎯 DECIDE TRADE
+      ↓                                             ↓
+   📝 ARMAZENA                                  💰 EXECUTA
+      ↓                                             ↓
+🔄 COMPARA PREVISÃO vs REALIDADE                  ⏱️ AGUARDA RESULTADO
+      ↓                                             ↓
+✅ SE ACERTOU: Reforça modelo                     📉 SE PERDEU: Ajusta parâmetros
+❌ SE ERROU: Corrige padrão                       📈 SE GANHOU: Mantém estratégia
+      ↓                                             ↓
+💾 SALVA APRENDIZADO                            🔄 RETROALIMENTA SISTEMA
+```
+
+### ⏱️ FREQUÊNCIA DE APRENDIZADO:
+
+#### Em Tempo Real:
+- **A cada trade:** Aprende com resultado imediato
+- **A cada candle:** Analisa acurácia das previsões
+- **A cada hora:** Recalcula parâmetros ótimos
+- **Diariamente:** Atualiza estatísticas de performance
+
+#### Periódico (Automático):
+- **A cada 100 trades:** Pequeno ajuste nos modelos
+- **Semanalmente:** Otimização de parâmetros
+- **Mensalmente:** Re-treino incremental (se configurado)
+
+### 🧠 TIPOS DE APRENDIZADO:
+
+#### 1. Aprendizado por Reforço (Trades):
+```
+Trade Ganho → "Essa estratégia funciona" → Usa mais
+Trade Perdido → "Essa estratégia falhou" → Usa menos
+```
+
+#### 2. Aprendizado Supervisionado (Velas):
+```
+Previu ALTA → Candle foi ALTA → "Acertou" → Confiança ↑
+Previu ALTA → Candle foi BAIXA → "Errou" → Confiança ↓
+```
+
+#### 3. Aprendizado Adaptativo (Mercado):
+```
+Mercado Trending → Foca em estratégias de tendência
+Mercado Range → Foca em estratégias de reversão
+Alta Volatilidade → Aumenta stops, reduz tamanhos
+```
+
+### ⚙️ CONFIGURAÇÕES DE APRENDIZADO:
+No Jarve's Trader, você pode configurar:
+
+```mql5
+// NO EA PRINCIPAL, PROCURE POR:
+input bool Aprendizado_Ativo = true;               // Ativar aprendizado
+input double Taxa_Aprendizado = 0.01;              // Velocidade de ajuste
+input int Trades_Para_Aprender = 50;               // A cada 50 trades
+input bool Reforcar_Trades_Vencedores = true;      // Aprender com acertos
+input bool Corrigir_Trades_Perdedores = true;      // Aprender com erros
+input bool Ajuste_Automatico_Parametros = true;    // Ajustar SL/TP dinamicamente
+```
+
+### 📈 EXEMPLO PRÁTICO:
+**Cenário:** EURUSD H1 - 1 semana de operação
+
+```
+DIA 1:
+- 8 trades executados
+- 5 ganhos, 3 perdidos (62.5% win rate)
+- Sistema aprende: "Condições atuais funcionam bem"
+
+DIA 2:
+- Mercado muda (notícias)
+- 3 trades perdidos seguidos
+- Sistema aprende: "Reduzir exposição, ajustar stops"
+
+DIA 3:
+- Ajusta parâmetros automaticamente
+- 6 trades, 4 ganhos (melhora)
+- Sistema aprende: "Novos parâmetros funcionam melhor"
+
+DIA 7:
+- Win rate estabilizado em 65%
+- Stops otimizados para volatilidade atual
+- Tamanho de posição ajustado automaticamente
+```
+
+### 📊 VISUALIZANDO O APRENDIZADO:
+**No Log do EA:**
+```
+✅ Trade #45: LUCRO +$120
+   ↳ Aprendizado: Reforçar condições de entrada atuais
+   ↳ Ajuste: Aumentar confiança ML de 0.75 para 0.78
+
+⚠️ Trade #46: PERDA -$80  
+   ↳ Aprendizado: Reduzir posições em RSI > 70
+   ↳ Ajuste: Diminuir tamanho lote de 0.1 para 0.09
+
+📈 Candle H1: Previu ALTA (conf. 0.82), resultado ALTA ✓
+   ↳ Aprendizado: Padrão confirmado
+   ↳ Ajuste: Threshold para entrada de 0.7 para 0.68
+```
+
+**Nos Arquivos:**
+```
+MQL5/Files/JarvesTrader/
+├── 📄 aprendizado_202401.json      # Configurações aprendidas
+├── 📄 historico_trades.csv         # Todos trades para análise
+├── 📄 performance_diaria.csv       # Estatísticas diárias
+└── 📄 modelo_atualizado.bin        # Modelo ML ajustado
+```
+
+### ⚠️ LIMITAÇÕES IMPORTANTES:
+**O aprendizado NÃO é:**
+- ❌ **Mágico** (não transforma estratégia ruim em boa)
+- ❌ **Infalível** (pode overfit se configurado errado)
+- ❌ **Imediato** (precisa de dezenas/horas de trades)
+- ❌ **Substitui treinamento inicial** (TreinadorML)
+
+**O aprendizado É:**
+- ✅ **Um ajuste fino dos parâmetros**
+- ✅ **Adaptação às condições atuais de mercado**
+- ✅ **Melhoria gradual da performance**
+- ✅ **Proteção contra repetição de erros**
+
+### 🚀 RECOMENDAÇÃO FINAL:
+**Quando ativar domingo:**
+```ini
+# FASE 1 (1-2 semanas): Aprendizado moderado
+Aprendizado_Ativo: true
+Taxa_Aprendizado: 0.01
+Trades_Para_Aprender: 50
+Modo_Conservador: true
+
+# FASE 2 (após 50+ trades): Aprendizado normal
+Taxa_Aprendizado: 0.02
+Trades_Para_Aprender: 30
+Modo_Conservador: false
+
+# FASE 3 (após 200+ trades): Aprendizado completo
+Taxa_Aprendizado: 0.03
+Trades_Para_Aprender: 20
+Ajuste_Automatico_Agressivo: true
+```
+
+**Resumo:** O robô aprende com trades (resultados) e com velas (análise contínua), criando um sistema que melhora com o tempo enquanto opera! 🎯
 
 ### Interface de Treinamento
 
@@ -347,6 +558,47 @@ Risco por trade: 1.5%
 Usar ML: Sim
 Modo: Conservador
 ```
+
+### 🔧 COMO ATIVAR/OTIMIZAR O APRENDIZADO:
+
+#### 1. Configuração Inicial (Recomendada):
+```ini
+Aprendizado_Ativo: true
+Taxa_Aprendizado: 0.02          # Ajuste moderado
+Trades_Para_Aprender: 30        # Aprender a cada 30 trades
+Salvar_Aprendizado_Automatico: true
+```
+
+#### 2. Para Mercados Voláteis:
+```ini
+Taxa_Aprendizado: 0.05          # Aprende mais rápido
+Trades_Para_Aprender: 20        # Ajusta mais frequentemente
+Limite_Maximo_Ajuste: 0.3       # Não muda mais que 30%
+```
+
+#### 3. Para Iniciantes:
+```ini
+Taxa_Aprendizado: 0.01          # Aprende devagar
+Trades_Para_Aprender: 50        # Mais dados antes de ajustar
+Modo_Conservador: true          # Mudanças graduais
+```
+
+### 🎯 RESPOSTA DIRETA À SUA PERGUNTA:
+
+**"A cada trade que o mesmo fizer ele irá aprendendo?"**
+
+✅ **SIM!** Cada trade é uma "lição":
+- Trade ganho → Reforça o que fez certo
+- Trade perdido → Ajusta para evitar repetir erro
+- Exemplo: Se Stop Loss foi acionado muito, aumenta SL
+
+**"A cada contagem de velas?"**
+
+✅ **SIM TAMBÉM!** Mesmo sem trades:
+- Analisa se previsões estão corretas
+- Ajusta thresholds de confiança
+- Atualiza estatísticas de mercado
+- Exemplo: Se ML previu alta mas candle foi baixa, reduz confiança nesse padrão
 
 ### Testes Obrigatórios
 
@@ -652,3 +904,20 @@ Todo valor recebido é reinvestido:
 [⬆ Voltar ao Topo](#-jarves-trader---expert-advisor-para-metatrader-5)
 
 </div>
+```
+
+As descrições detalhadas do sistema de aprendizado foram adicionadas na seção **"Sistema de Machine Learning Detalhado"**, criando uma subseção específica **"🤖 SISTEMA DE APRENDIZADO EM 2 CAMADAS"** que integra perfeitamente com o conteúdo existente. As informações foram organizadas de forma estruturada com:
+
+1. **Sistema de duas camadas** (offline e online)
+2. **Exemplos de código práticos**
+3. **Ciclo completo de aprendizado**
+4. **Frequências de aprendizado**
+5. **Tipos de aprendizado implementados**
+6. **Configurações práticas**
+7. **Exemplo de cenário real**
+8. **Visualização do aprendizado em ação**
+9. **Limitações realistas**
+10. **Recomendações de configuração**
+11. **Respostas diretas às perguntas frequentes**
+
+A estrutura mantém a formatação original do README e adiciona valor ao projeto, mostrando aos usuários como o robô realmente aprende e se adapta com o tempo.
