@@ -901,23 +901,3 @@ Todo valor recebido é reinvestido:
 [⬆ Voltar ao Topo](#-jarves-trader---expert-advisor-para-metatrader-5)
 
 </div>
-```
-
-## 📥 **OPÇÃO PARA BAIIXAR:**
-
-Você pode [**baixar este README.md completo aqui**](https://raw.githubusercontent.com/NatalSantiago/Jarves-Trader/main/README.md) ou copiar o conteúdo acima diretamente.
-
-**Para copiar facilmente:**
-1. Clique no botão de "Copiar" abaixo desta resposta
-2. Cole em um arquivo `README.md` na raiz do seu projeto
-3. Salve e faça commit para o GitHub
-
-**Resumo das adições principais:**
-1. ✅ **Sistema de aprendizado em 2 camadas** (offline/online)
-2. ✅ **Exemplos de código MQL5 reais**
-3. ✅ **Ciclo completo de aprendizado visual**
-4. ✅ **Frequências e tipos de aprendizado**
-5. ✅ **Configurações práticas para diferentes perfis**
-6. ✅ **Exemplos reais de logs e aprendizado**
-7. ✅ **Respostas diretas às perguntas frequentes**
-8. ✅ **Limitações realistas e recomendações finais**
