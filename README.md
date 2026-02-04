@@ -1,11 +1,11 @@
-<div align="center">
-  
 # 🤖 Jarve's Trader - Expert Advisor para MetaTrader 5
 
 **Sistema Automatizado de Trading com Machine Learning e Inteligência Artificial**
 
 *"Tecnologia que entende o mercado, honestidade que valoriza seu capital"*
 
+<div align="center">
+  
 <img src="JarvesTrader01.png" width="300" height="300" alt="Logo Jarve's Trader">
 
 ---
@@ -15,7 +15,7 @@
 ![Version](https://img.shields.io/badge/Version-3.0.0-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Language](https://img.shields.io/badge/Language-Portuguese%20(BR)-red)
-![ML](https://img.shields.io/badge/Machine%20Learning-Active-success)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Active-success)
 
 [![Download Now](https://img.shields.io/badge/Download-Latest_Release-success)](https://github.com/NatalSantiago/Jarves-Trader/releases/latest)
 [![WhatsApp Support](https://img.shields.io/badge/WhatsApp-Suporte_24h-25D366)](https://wa.me/5599984447141)
@@ -25,11 +25,36 @@
 
 ---
 
+## Índice
+- [O Que é o Jarve's Trader?](#o-que-é-o-jarves-trader)
+- [Recursos Principais do Sistema](#recursos-principais-do-sistema)
+- [Sistema de Machine Learning Detalhado](#sistema-de-machine-learning-detalhado)
+- [Como o Robô Opera no Mercado](#como-o-robô-opera-no-mercado)
+- [Sistema de Gestão de Risco](#sistema-de-gestão-de-risco)
+- [Como Começar a Usar](#como-começar-a-usar)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Instalação em 5 Minutos](#instalação-em-5-minutos)
+  - [Configuração Inicial Recomendada](#configuração-inicial-recomendada)
+  - [Testes Obrigatórios](#testes-obrigatórios)
+- [Como Ativar e Otimizar o Aprendizado](#como-ativar-e-otimizar-o-aprendizado)
+- [Backtesting e Otimização](#backtesting-e-otimização)
+- [Resultados e Performance](#resultados-e-performance)
+- [Perguntas Frequentes](#perguntas-frequentes)
+- [Suporte e Comunidade](#suporte-e-comunidade)
+- [Como Contribuir](#como-contribuir)
+- [Licença](#licença)
+- [Apoie o Projeto](#apoie-o-projeto)
+- [Agradecimentos](#agradecimentos)
+- [Estatísticas do Projeto](#estatísticas-do-projeto)
+- [Histórico de Versões](#histórico-de-versões)
+
+---
+
 ## 🎯 O Que é o Jarve's Trader?
 
 O **Jarve's Trader** é um Expert Advisor (robô de trading) de última geração desenvolvido exclusivamente para MetaTrader 5. Ele combina análise técnica tradicional com algoritmos avançados de Machine Learning para criar um sistema de trading completamente automatizado, adaptativo e inteligente.
 
-### 🤔 Como Funciona?
+### Como Funciona?
 
 O robô opera 24 horas por dia, analisando o mercado em tempo real através de múltiplas camadas de inteligência:
 
@@ -42,7 +67,7 @@ O robô opera 24 horas por dia, analisando o mercado em tempo real através de m
 
 ## ✨ Recursos Principais do Sistema
 
-### 🧠 Machine Learning Inteligente
+### Machine Learning Inteligente
 O coração do sistema é seu módulo de Machine Learning que:
 - **Aprende automaticamente** com dados históricos de mercado
 - **Reconhece padrões complexos** que humanos não percebem
@@ -50,7 +75,7 @@ O coração do sistema é seu módulo de Machine Learning que:
 - **Ajusta-se automaticamente** a diferentes condições de mercado
 - **Combina múltiplos algoritmos** para maior precisão
 
-### 📊 Análise Técnica Completa
+### Análise Técnica Completa
 O robô analisa o mercado através de:
 - **15 padrões de candlestick** diferentes (Hammer, Doji, Engulfing, etc.)
 - **Múltiplos indicadores técnicos** simultaneamente (EMA, RSI, MACD, Bollinger)
@@ -58,28 +83,28 @@ O robô analisa o mercado através de:
 - **Volume e spread** para confirmar movimentos
 - **Divergências** entre preço e indicadores
 
-### 🛡️ Sistema de Gestão de Risco 4.0
+### Sistema de Gestão de Risco 4.0
 Seu capital é protegido por 4 camadas:
 1. **Prevenção** - Filtra operações arriscadas antes de entrar
 2. **Proteção Individual** - Stop Loss e Take Profit inteligentes
 3. **Gestão de Portfólio** - Controla exposição total da conta
 4. **Proteção de Capital** - Para automaticamente em drawdowns extremos
 
-### ⚡ Execução Automática
+### Execução Automática
 - **Entradas automáticas** quando condições são atendidas
 - **Saídas inteligentes** com trailing stop dinâmico
 - **Gerenciamento de posições** (scaling in/out)
 - **Proteção contra slippage** e spreads altos
 - **Re-tentativas** em caso de falhas de conexão
 
-### 📰 Análise Fundamental Integrada
+### Análise Fundamental Integrada
 O robô considera:
 - **Calendário econômico** em tempo real
 - **Eventos de alto impacto** (Non-Farm, FED, etc.)
 - **Horários de abertura/fechamento** de mercados
 - **Feriados e fins de semana**
 
-### 🌐 Interface Amigável
+### Interface Amigável
 - **Totalmente em português**
 - **Painel de controle visual**
 - **Configuração por perfis** (conservador, moderado, agressivo)
@@ -94,7 +119,7 @@ O robô considera:
 
 O sistema de aprendizado funciona em 4 etapas:
 
-#### 1️⃣ Coleta de Dados
+#### 1. Coleta de Dados
 O robô coleta automaticamente:
 - Dados históricos de preço (OHLC)
 - Volume de negociação
@@ -102,14 +127,14 @@ O robô coleta automaticamente:
 - Padrões gráficos identificados
 - Informações de mercado relevantes
 
-#### 2️⃣ Preparação dos Dados
+#### 2. Preparação dos Dados
 Os dados coletados são:
 - Normalizados para mesma escala
 - Balanceados para evitar viés
 - Divididos em treino e teste
 - Processados para remover ruído
 
-#### 3️⃣ Treinamento dos Modelos
+#### 3. Treinamento dos Modelos
 São utilizados 7 algoritmos diferentes:
 - **Random Forest** - Para padrões complexos
 - **Gradient Boosting** - Para tendências fortes
@@ -119,30 +144,30 @@ São utilizados 7 algoritmos diferentes:
 - **Naive Bayes** - Para probabilidades rápidas
 - **Regressão Logística** - Para sinais binários
 
-#### 4️⃣ Validação e Seleção
+#### 4. Validação e Seleção
 Cada modelo é testado através de:
 - **Validação cruzada** (k-fold)
 - **Testes com dados recentes**
 - **Comparação de métricas** (accuracy, precisão, recall)
 - **Seleção do melhor modelo** para cada ativo
 
-### 🤖 SISTEMA DE APRENDIZADO EM 2 CAMADAS:
+### Sistema de Aprendizado em 2 Camadas:
 
-#### 1. APRENDIZADO OFFLINE (TreinadorML)
+#### 1. Aprendizado Offline (TreinadorML)
 **Quando:** Quando você executa o TreinadorML.mq5  
 **Como:** Usa dados históricos (ex: últimas 5000 velas)  
 **Resultado:** Gera um modelo .bin (arquivo de pesos/regras)  
 **Frequência:** Você decide (semanal, mensal, etc.)
 
-#### 2. APRENDIZADO ONLINE (Jarve's Trader em tempo real)
+#### 2. Aprendizado Online (Jarve's Trader em tempo real)
 **Quando:** Durante a operação normal do EA  
 **Como:** Ajusta parâmetros baseado nos trades recentes  
 **Resultado:** Melhora performance gradualmente  
 **Frequência:** A cada trade e a cada candle
 
-### 📊 COMO FUNCIONA NA PRÁTICA:
+### Como Funciona na Prática:
 
-#### A) APRENDENDO COM TRADES:
+#### A) Aprendendo com Trades:
 ```mql5
 // Exemplo simplificado do código:
 void AprenderComTrade(int resultado_trade)
@@ -166,7 +191,7 @@ void AprenderComTrade(int resultado_trade)
 }
 ```
 
-#### B) APRENDENDO COM VELAS (Análise Contínua):
+#### B) Aprendendo com Velas (Análise Contínua):
 ```mql5
 void OnTick()
 {
@@ -188,7 +213,7 @@ void OnTick()
 }
 ```
 
-### 🔄 CICLO COMPLETO DE APRENDIZADO:
+### Ciclo Completo de Aprendizado:
 ```
 📈 NOVO CANDLE → 🤖 ANALISA → 📊 FAZ PREVISÃO → 🎯 DECIDE TRADE
       ↓                                             ↓
@@ -202,7 +227,7 @@ void OnTick()
 💾 SALVA APRENDIZADO                            🔄 RETROALIMENTA SISTEMA
 ```
 
-### ⏱️ FREQUÊNCIA DE APRENDIZADO:
+### Frequência de Aprendizado:
 
 #### Em Tempo Real:
 - **A cada trade:** Aprende com resultado imediato
@@ -215,7 +240,7 @@ void OnTick()
 - **Semanalmente:** Otimização de parâmetros
 - **Mensalmente:** Re-treino incremental (se configurado)
 
-### 🧠 TIPOS DE APRENDIZADO:
+### Tipos de Aprendizado:
 
 #### 1. Aprendizado por Reforço (Trades):
 ```
@@ -236,7 +261,7 @@ Mercado Range → Foca em estratégias de reversão
 Alta Volatilidade → Aumenta stops, reduz tamanhos
 ```
 
-### ⚙️ CONFIGURAÇÕES DE APRENDIZADO:
+### Configurações de Aprendizado:
 No Jarve's Trader, você pode configurar:
 
 ```mql5
@@ -249,7 +274,7 @@ input bool Corrigir_Trades_Perdedores = true;      // Aprender com erros
 input bool Ajuste_Automatico_Parametros = true;    // Ajustar SL/TP dinamicamente
 ```
 
-### 📈 EXEMPLO PRÁTICO:
+### Exemplo Prático:
 **Cenário:** EURUSD H1 - 1 semana de operação
 
 ```
@@ -274,7 +299,7 @@ DIA 7:
 - Tamanho de posição ajustado automaticamente
 ```
 
-### 📊 VISUALIZANDO O APRENDIZADO:
+### Visualizando o Aprendizado:
 **No Log do EA:**
 ```
 ✅ Trade #45: LUCRO +$120
@@ -299,7 +324,7 @@ MQL5/Files/JarvesTrader/
 └── 📄 modelo_atualizado.bin        # Modelo ML ajustado
 ```
 
-### ⚠️ LIMITAÇÕES IMPORTANTES:
+### Limitações Importantes:
 **O aprendizado NÃO é:**
 - ❌ **Mágico** (não transforma estratégia ruim em boa)
 - ❌ **Infalível** (pode overfit se configurado errado)
@@ -373,25 +398,25 @@ A cada novo candle, o robô executa:
 
 ### Estratégias Implementadas
 
-#### 📈 Estratégia de Tendência
+#### Estratégia de Tendência
 - Identifica tendências fortes com ML
 - Entra na direção da tendência
 - Usa trailing stop dinâmico
 - Ideal para mercados trending
 
-#### 📉 Estratégia de Reversão
+#### Estratégia de Reversão
 - Detecta sobrecompra/sobrevenda com ML
 - Antecipa reversões de preço
 - Opera contra a tendência momentânea
 - Excelente para mercados range-bound
 
-#### ⚡ Estratégia de Breakout
+#### Estratégia de Breakout
 - Identifica níveis de suporte/resistência
 - Opera rompimentos confirmados
 - Usa stops apertados
 - Para mercados voláteis
 
-#### 🤖 Estratégia Ensemble
+#### Estratégia Ensemble
 - Combina todas as estratégias
 - Usa votação ponderada entre modelos
 - Maior robustez e consistência
@@ -436,47 +461,6 @@ O robô calcula o lote ideal baseado em:
 - **Volatilidade atual** do ativo (ATR)
 - **Saldo disponível** na conta
 - **Limites do broker** (lote mínimo/máximo)
-
----
-
-## 📊 Backtesting e Otimização
-
-### Testes Históricos Completos
-
-O robô inclui sistema de backtesting que:
-- **Testa estratégias** com dados históricos reais
-- **Valida modelos ML** em diferentes períodos
-- **Calcula métricas** de performance detalhadas
-- **Gera relatórios** completos em HTML/PDF
-- **Compara configurações** para encontrar a melhor
-
-### Métricas Analisadas
-
-#### Principais:
-- **Profit Factor** - Lucro total / Prejuízo total (ideal > 1.5)
-- **Win Rate** - Percentual de trades vencedores (ideal > 55%)
-- **Maximum Drawdown** - Maior queda da conta (ideal < 20%)
-- **Sharpe Ratio** - Retorno ajustado ao risco (ideal > 1.0)
-
-#### Avançadas:
-- **Sortino Ratio** - Foco em risco negativo
-- **Calmar Ratio** - Retorno vs drawdown máximo
-- **Recovery Factor** - Capacidade de recuperação
-- **Consistency Score** - Estabilidade dos retornos
-
-### Otimização Inteligente
-
-O sistema pode otimizar automaticamente:
-- **Parâmetros técnicos** (períodos de indicadores)
-- **Configurações de risco** (tamanho de lote, stops)
-- **Hiperparâmetros ML** (algoritmos, thresholds)
-- **Horários de trading** (melhores momentos para operar)
-
-Usando:
-- **Algoritmos genéticos** - Encontra combinações ótimas
-- **Walk-forward analysis** - Testa robustez em diferentes períodos
-- **Monte Carlo simulations** - Avalia probabilidade de sucesso
-- **Validação cruzada** - Evita overfitting
 
 ---
 
@@ -534,9 +518,20 @@ Usar ML: Sim
 Modo: Conservador
 ```
 
-### 🔧 COMO ATIVAR/OTIMIZAR O APRENDIZADO:
+### Testes Obrigatórios
 
-#### 1. Configuração Inicial (Recomendada):
+Antes de usar dinheiro real:
+
+1. **Backtest** - Teste com pelo menos 2 anos de dados
+2. **Demo** - Opere em conta DEMO por 30 dias
+3. **Forward test** - Teste em tempo real com volume mínimo
+4. **Otimização** - Ajuste para seu perfil de risco
+
+---
+
+## 🔧 Como Ativar e Otimizar o Aprendizado:
+
+### 1. Configuração Inicial (Recomendada):
 ```ini
 Aprendizado_Ativo: true
 Taxa_Aprendizado: 0.02          # Ajuste moderado
@@ -544,21 +539,21 @@ Trades_Para_Aprender: 30        # Aprender a cada 30 trades
 Salvar_Aprendizado_Automatico: true
 ```
 
-#### 2. Para Mercados Voláteis:
+### 2. Para Mercados Voláteis:
 ```ini
 Taxa_Aprendizado: 0.05          # Aprende mais rápido
 Trades_Para_Aprender: 20        # Ajusta mais frequentemente
 Limite_Maximo_Ajuste: 0.3       # Não muda mais que 30%
 ```
 
-#### 3. Para Iniciantes:
+### 3. Para Iniciantes:
 ```ini
 Taxa_Aprendizado: 0.01          # Aprende devagar
 Trades_Para_Aprender: 50        # Mais dados antes de ajustar
 Modo_Conservador: true          # Mudanças graduais
 ```
 
-### 🚀 RECOMENDAÇÃO FINAL:
+### Recomendação Final:
 **Quando ativar domingo:**
 ```ini
 # FASE 1 (1-2 semanas): Aprendizado moderado
@@ -578,7 +573,7 @@ Trades_Para_Aprender: 20
 Ajuste_Automatico_Agressivo: true
 ```
 
-### 🎯 RESPOSTA DIRETA À SUA PERGUNTA:
+### Resposta Direta à Sua Pergunta:
 
 **"A cada trade que o mesmo fizer ele irá aprendendo?"**
 
@@ -595,16 +590,48 @@ Ajuste_Automatico_Agressivo: true
 - Atualiza estatísticas de mercado
 - Exemplo: Se ML previu alta mas candle foi baixa, reduz confiança nesse padrão
 
-**Resumo:** O robô aprende com trades (resultados) e com velas (análise contínua), criando um sistema que melhora com o tempo enquanto opera! 🎯
+**Resumo:** O robô aprende com trades (resultados) e com velas (análise contínua), criando um sistema que melhora com o tempo enquanto opera!
 
-### Testes Obrigatórios
+---
 
-Antes de usar dinheiro real:
+## 📊 Backtesting e Otimização
 
-1. **Backtest** - Teste com pelo menos 2 anos de dados
-2. **Demo** - Opere em conta DEMO por 30 dias
-3. **Forward test** - Teste em tempo real com volume mínimo
-4. **Otimização** - Ajuste para seu perfil de risco
+### Testes Históricos Completos
+
+O robô inclui sistema de backtesting que:
+- **Testa estratégias** com dados históricos reais
+- **Valida modelos ML** em diferentes períodos
+- **Calcula métricas** de performance detalhadas
+- **Gera relatórios** completos em HTML/PDF
+- **Compara configurações** para encontrar a melhor
+
+### Métricas Analisadas
+
+#### Principais:
+- **Profit Factor** - Lucro total / Prejuízo total (ideal > 1.5)
+- **Win Rate** - Percentual de trades vencedores (ideal > 55%)
+- **Maximum Drawdown** - Maior queda da conta (ideal < 20%)
+- **Sharpe Ratio** - Retorno ajustado ao risco (ideal > 1.0)
+
+#### Avançadas:
+- **Sortino Ratio** - Foco em risco negativo
+- **Calmar Ratio** - Retorno vs drawdown máximo
+- **Recovery Factor** - Capacidade de recuperação
+- **Consistency Score** - Estabilidade dos retornos
+
+### Otimização Inteligente
+
+O sistema pode otimizar automaticamente:
+- **Parâmetros técnicos** (períodos de indicadores)
+- **Configurações de risco** (tamanho de lote, stops)
+- **Hiperparâmetros ML** (algoritmos, thresholds)
+- **Horários de trading** (melhores momentos para operar)
+
+Usando:
+- **Algoritmos genéticos** - Encontra combinações ótimas
+- **Walk-forward analysis** - Testa robustez em diferentes períodos
+- **Monte Carlo simulations** - Avalia probabilidade de sucesso
+- **Validação cruzada** - Evita overfitting
 
 ---
 
@@ -649,7 +676,7 @@ Depende da quantidade de dados:
 - 50.000 candles: 1-2 horas (recomenda-se VPS)
 
 #### 3. O modelo fica desatualizado?
-O sistema detecta automaticamente quando o modelo precisa ser atualizado e pode re-treinar periodicamente ou quando performance cai.
+O sistema detecta automaticamente quando o modelo precisa ser atualizado e pode re-treinar periódicamente ou quando performance cai.
 
 #### 4. Posso usar meu próprio dataset?
 Sim, o sistema permite importar dados em formato CSV para treinamento personalizado.
@@ -692,7 +719,7 @@ Não, o sistema é totalmente automático. Mas recomenda-se verificação perió
 **Número:** [(99) 9 8444-7141](https://wa.me/5599984447141)
 - Resposta em até 2 horas úteis
 - Ajuda com instalação e configuração
-- Suporte técnico gratuit
+- Suporte técnico gratuito
 
 #### Email para Assuntos Formais
 **Endereço:** [natal.santiago.tech@gmail.com](mailto:natal.santiago.tech@gmail.com)
@@ -898,6 +925,6 @@ Todo valor recebido é reinvestido:
 
 📈 **Trade com Sabedoria, Automatize com Inteligência!**
 
-[⬆ Voltar ao Topo](#-jarves-trader---expert-advisor-para-metatrader-5)
+[⬆ Voltar ao Topo](#🤖-jarves-trader---expert-advisor-para-metatrader-5)
 
 </div>
