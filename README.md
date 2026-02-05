@@ -25,28 +25,29 @@
 
 ---
 
-## Índice
-- [O Que é o Jarve's Trader?](#o-que-é-o-jarves-trader)
-- [Recursos Principais do Sistema](#recursos-principais-do-sistema)
-- [Sistema de Machine Learning Detalhado](#sistema-de-machine-learning-detalhado)
-- [Como o Robô Opera no Mercado](#como-o-robô-opera-no-mercado)
-- [Sistema de Gestão de Risco](#sistema-de-gestão-de-risco)
-- [Como Começar a Usar](#como-começar-a-usar)
-  - [Pré-requisitos](#pré-requisitos)
-  - [Instalação em 5 Minutos](#instalação-em-5-minutos)
-  - [Configuração Inicial Recomendada](#configuração-inicial-recomendada)
-  - [Testes Obrigatórios](#testes-obrigatórios)
-- [Como Ativar e Otimizar o Aprendizado](#como-ativar-e-otimizar-o-aprendizado)
-- [Backtesting e Otimização](#backtesting-e-otimização)
-- [Resultados e Performance](#resultados-e-performance)
-- [Perguntas Frequentes](#perguntas-frequentes)
-- [Suporte e Comunidade](#suporte-e-comunidade)
-- [Como Contribuir](#como-contribuir)
-- [Licença](#licença)
-- [Apoie o Projeto](#apoie-o-projeto)
-- [Agradecimentos](#agradecimentos)
-- [Estatísticas do Projeto](#estatísticas-do-projeto)
-- [Histórico de Versões](#histórico-de-versões)
+## 📑 Índice
+
+- [🎯 O Que é o Jarve's Trader?](#o-que-é-o-jarves-trader)
+- [✨ Recursos Principais do Sistema](#recursos-principais-do-sistema)
+- [🧠 Sistema de Machine Learning Detalhado](#sistema-de-machine-learning-detalhado)
+- [⚙️ Como o Robô Opera no Mercado](#como-o-robô-opera-no-mercado)
+- [🛡️ Sistema de Gestão de Risco](#sistema-de-gestão-de-risco)
+- [🚀 Como Começar a Usar](#como-começar-a-usar)
+  - [📋 Pré-requisitos](#pré-requisitos)
+  - [📥 Instalação em 5 Minutos](#instalação-em-5-minutos)
+  - [⚙️ Configuração Inicial Recomendada](#configuração-inicial-recomendada)
+  - [🧪 Testes Obrigatórios](#testes-obrigatórios)
+- [🔧 Como Ativar e Otimizar o Aprendizado](#como-ativar-e-otimizar-o-aprendizado)
+- [📊 Backtesting e Otimização](#backtesting-e-otimização)
+- [📈 Resultados e Performance](#resultados-e-performance)
+- [❓ Perguntas Frequentes](#perguntas-frequentes)
+- [📞 Suporte e Comunidade](#suporte-e-comunidade)
+- [🤝 Como Contribuir](#como-contribuir)
+- [📄 Licença](#licença)
+- [💖 Apoie o Projeto](#apoie-o-projeto)
+- [🎉 Agradecimentos](#agradecimentos)
+- [📊 Estatísticas do Projeto](#estatísticas-do-projeto)
+- [🔄 Histórico de Versões](#histórico-de-versões)
 
 ---
 
@@ -466,13 +467,13 @@ O robô calcula o lote ideal baseado em:
 
 ## 🚀 Como Começar a Usar
 
-### Pré-requisitos
+### 📋 Pré-requisitos
 1. **MetaTrader 5** instalado e atualizado
 2. **Conta DEMO** para testes iniciais
 3. **Conexão estável** com internet
 4. **Computador ligado** ou VPS para operação 24/7
 
-### Instalação em 5 Minutos
+### 📥 Instalação em 5 Minutos
 
 #### Passo 1: Download
 Baixe a versão mais recente no GitHub:
@@ -505,7 +506,7 @@ Descompacte o arquivo ZIP baixado em uma pasta.
 3. Clique em "Iniciar Treinamento"
 4. Aguarde conclusão (modelo será usado automaticamente)
 
-### Configuração Inicial Recomendada
+### ⚙️ Configuração Inicial Recomendada
 
 Para começar, use estas configurações básicas:
 
@@ -518,7 +519,7 @@ Usar ML: Sim
 Modo: Conservador
 ```
 
-### Testes Obrigatórios
+### 🧪 Testes Obrigatórios
 
 Antes de usar dinheiro real:
 
